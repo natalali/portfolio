@@ -8,13 +8,10 @@ body {
     font-family: Lato, sans-serif;
 }
 
-header {
-    height: 20%;
+header {    
     z-index: 0;
-}
+    height: 30%;
 
-header.big {
-    height: 40%;
     display: flex;
     gap: 20px;
 
@@ -24,6 +21,16 @@ header.big {
     box-sizing: border-box;
 }
 
+header h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
 
 img.Logo {
     width: 114px;
@@ -95,7 +102,6 @@ img.Logo {
 }
 
 .Menu img {
-    margin-top: auto;
     margin-bottom: 100px;
 }
 
@@ -115,21 +121,30 @@ img.Logo {
     font-weight: 320;
 }
 
-.Content h1 {
-    font-size: 24px;
-    text-align: center;
-}
-
 .hidden {
     display: none;
 }
 
 /* About */
 
+.Content.Headshotted {
+    padding-top: 140px;
+}
+
 .Headshot {
     width: 172px;
     height: 172px;
     border-radius: 100%;
+}
 
-    baseline-shift: 50%;
+/* Portfolio */
+.Content.Portfolio {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Content.Portfolio img {
+    width: 50%;
+    flex: 50%;
 }
