@@ -17,7 +17,7 @@ header {
 
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
     box-sizing: border-box;
 }
 
@@ -127,14 +127,24 @@ img.Logo {
 
 /* About */
 
-.Content.Headshotted {
-    padding-top: 140px;
+.Round {
+    border-radius: 100%;
+    width: 172px;
+    height: 172px;
 }
 
 .Headshot {
-    width: 172px;
-    height: 172px;
-    border-radius: 100%;
+    width: 100%;
+    margin-top: -25%;    
+    background: linear-gradient(
+        #437F8C,
+        #437F8C 50%,
+        #f3f3f3 50%,
+        #f3f3f3
+    );
+
+    display: flex;
+    justify-content: center;
 }
 
 /* Portfolio */
