@@ -51,18 +51,19 @@ header {
     }
 }
 
-.Menu button {
+.Menu a {
+    display: inline-block;
     width: 64%;
 
     font-size: 24px;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+    line-height: 50px;
     letter-spacing: 0.1em;
+    text-align: center;
+    text-decoration: none;
 
     background: none;
     color: white;
-    padding: 10px;
     text-transform: uppercase;
     border: 1px solid white;
 }
@@ -75,6 +76,18 @@ header {
     height: 120px;
 }
 
+.Menu img.big {
+    margin-top: auto;
+    margin-bottom: 100px;
+
+    width: 228px;
+    height: 240px;
+}
+
 .Content {
     background-color: #f3f3f3;
+}
+
+.hidden {
+    display: none;
 }

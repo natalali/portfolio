@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="Hamburger"><div></div></div>
+        </header>
+        <div class="Menu hidden">            
+            <a href="index.html">Home</a>
+            <a>About</a>
+            <a>Portfolio</a>
+            <a>Contact</a>
+            <img src="logo_natke.svg" alt="Logo Natke Design">
+        </div>
+        <div class="Content">
+        </div>
+
+        <script type="text/javascript">
+            document.querySelector(".Hamburger").addEventListener("click",
+                () => {
+                    document.querySelector(".Menu").classList.toggle("hidden");
+                }
+            );
+        </script>
+    </body>
+</html>
