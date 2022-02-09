@@ -44,6 +44,7 @@ img.Logo {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 3;
 }
 
 .Hamburger div {
@@ -75,7 +76,12 @@ img.Logo {
     justify-content: center;
     gap: 20px;
 
-    z-index: 20;
+    z-index: 2;
+    transition: transform 1s;
+}
+
+.Menu.hidden {
+    transform: translateX(-100%);
 }
 
 @media only screen and (max-width: 600px) {
@@ -119,10 +125,6 @@ img.Logo {
 
     font-size: 18px;
     font-weight: 320;
-}
-
-.hidden {
-    display: none;
 }
 
 /* About */
