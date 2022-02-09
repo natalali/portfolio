@@ -10,12 +10,33 @@ body {
 
 header {
     height: 20%;
+    z-index: 0;
+}
+
+header.big {
+    height: 40%;
+    display: flex;
+    gap: 20px;
+
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+
+img.Logo {
+    width: 114px;
+    height: 120px;
 }
 
 .Hamburger {
     padding: 20px;
     width: 43px;
     height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .Hamburger div {
@@ -37,12 +58,17 @@ header {
 
 .Menu {
     width: 100%;
-    height: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
 
+    background-color: #437F8C;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    z-index: 20;
 }
 
 @media only screen and (max-width: 600px) {
@@ -71,13 +97,9 @@ header {
 .Menu img {
     margin-top: auto;
     margin-bottom: 100px;
-
-    width: 114px;
-    height: 120px;
 }
 
 .Menu img.big {
-    margin-top: auto;
     margin-bottom: 100px;
 
     width: 228px;
@@ -86,8 +108,19 @@ header {
 
 .Content {
     background-color: #f3f3f3;
+    height: 30%;
 }
 
 .hidden {
     display: none;
+}
+
+/* About */
+
+.Headshot {
+    width: 172px;
+    height: 172px;
+    border-radius: 100%;
+
+    baseline-shift: 50%;
 }
