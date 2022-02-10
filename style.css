@@ -10,7 +10,7 @@ body {
 
 header {    
     z-index: 0;
-    height: 30%;
+    height: 180px;
 
     display: flex;
     gap: 20px;
@@ -137,7 +137,6 @@ img.Logo {
 
 .Headshot {
     width: 100%;
-    margin-top: -25%;    
     background: linear-gradient(
         #437F8C,
         #437F8C 50%,
