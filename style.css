@@ -10,39 +10,45 @@ body {
 
 header {    
     z-index: 0;
-    height: 180px;
 
     display: flex;
     gap: 20px;
-
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 24px;
-    text-align: center;
+/* Mobile header */
+@media only screen and (max-width: 600px) {
+    header { 
+        height: 180px;
+
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
 }
 
-/* Pages other than about with title */
-body > h1 {
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 0.1em;
+/* desktop header */
+@media only screen and (min-width: 600px) {
+    header { 
+        padding-left: 177px;
+        padding-top: 56px;
+        padding-bottom: 55px;
+
+        align-items: center;
+    }
 }
 
-body > h2 {
-    font-weight: 400;
-    line-height: 65px;
-    padding-left: 25px;
-    margin: 0;
-}
-
-img.Logo {
+header > a, img.Logo {
     width: 114px;
     height: 120px;
+}
+
+/* Hamburger */
+
+@media only screen and (min-width: 600px) {
+    .Hamburger {
+        display: none;
+    }
 }
 
 .Hamburger {
@@ -72,38 +78,50 @@ img.Logo {
     );
 }
 
-.Menu {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
+/* Menu */
 
+.Menu {
     background-color: #437F8C;
     display: flex;
     z-index: 2;
-    transition: transform 1s;
 }
 
-.Menu.hidden {
-    transform: translateX(-100%);
+@media only screen and (min-width: 600px) {
+    .Menu {
+        height: 100%;
+        width: 100%;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .Menu {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        flex-direction: column;
+
+
+        transition: transform 1s;
     }
 
-    .Menu .Welcome {
-        display: none;
+    .Menu.hidden {
+        transform: translateX(-100%);
     }
 }
 
 .Menu a {
     display: inline-block;
     width: 64%;
+    height: auto;
 
     font-size: 24px;
     font-weight: 500;
@@ -118,6 +136,13 @@ img.Logo {
     border: 1px solid white;
 }
 
+@media only screen and (min-width: 600px) {
+    .Menu a { 
+        height: 50px;
+        max-width: 252px;
+    }
+}
+
 .Menu img {
     margin-bottom: 100px;
 }
@@ -128,6 +153,35 @@ img.Logo {
     width: 228px;
     height: 240px;
 }
+
+/* Between header and content */
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Pages other than about with title */
+body > h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+/* Hide the white headers on desktop */
+@media only screen and (min-width: 600px) {
+    body > h1 {
+        display: none;
+    }
+}
+
+body > h2 {
+    font-weight: 400;
+    line-height: 65px;
+    padding-left: 25px;
+    margin: 0;
+}
+
+/* Content */
 
 .Content {
     background-color: #f3f3f3;
@@ -141,25 +195,48 @@ img.Logo {
     overflow-wrap: break-word;
 }
 
-/* About */
+@media only screen and (min-width: 600px) {
+    .Content {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
 
-.Round {
-    border-radius: 100%;
-    width: 172px;
-    height: 172px;
+    .Content div {
+        padding: 50px;
+        max-width: 400px;
+    }
+
+    /* headshot */
+    .Content img {
+        height: 344px;
+        width: 344px;
+    }
 }
 
-.Headshot {
-    width: 100%;
-    background: linear-gradient(
-        #437F8C,
-        #437F8C 50%,
-        #f3f3f3 50%,
-        #f3f3f3
-    );
+/* About */
 
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 600px) {
+
+    .Round {
+        border-radius: 100%;
+        width: 172px;
+        height: 172px;
+    }
+
+    .Headshot {
+        width: 100%;
+        background: linear-gradient(
+            #437F8C,
+            #437F8C 50%,
+            #f3f3f3 50%,
+            #f3f3f3
+        );
+
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 /* Portfolio */
@@ -200,4 +277,17 @@ img.Logo {
     margin: 0;
     margin-top: 35px;
     font-size: 18px;
+}
+
+/* Desktop vs mobile */
+@media only screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mobile {
+        display: none;
+    }
 }
