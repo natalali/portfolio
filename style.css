@@ -214,6 +214,32 @@ body > h2 {
     }
 }
 
+/* Index */
+
+.Index {
+    width: 100%;
+
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+.Index img {
+    width: 400;
+    height: 423px;
+}
+
+.Welcome {
+    font-size: 24px;
+    max-width: 30%;
+}
+
+.Welcome h1 {
+    font-size: 38px;
+    text-align: left;
+}
+
 /* About */
 
 @media only screen and (max-width: 600px) {
