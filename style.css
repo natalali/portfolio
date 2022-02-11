@@ -30,6 +30,8 @@ header {
 /* desktop header */
 @media only screen and (min-width: 600px) {
     header { 
+        height: 180px;
+
         padding-left: 177px;
         padding-top: 56px;
         padding-bottom: 55px;
@@ -204,7 +206,11 @@ body > h2 {
 
     .Content div {
         padding: 50px;
-        max-width: 400px;
+        max-width: 35%;
+    }
+
+    .Content h1 {
+        text-align: left;
     }
 
     /* headshot */
@@ -222,6 +228,7 @@ body > h2 {
     padding-top: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 140px;
 }
 
@@ -232,7 +239,7 @@ body > h2 {
 
 .Welcome {
     font-size: 24px;
-    max-width: 30%;
+    max-width: 40%;
 }
 
 .Welcome h1 {
