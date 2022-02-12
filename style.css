@@ -328,6 +328,43 @@ body > h2 {
     font-size: 18px;
 }
 
+.Hero {
+    display: flex;
+    padding-top: 150px;
+}
+
+.Hero .left {
+    text-align: right;
+    width: 65%;
+    border-right: 1px solid white;
+    font-size: 36px;
+    padding-right: 80px;
+}
+
+ .Hero .left * {
+    text-align: right;
+ }
+
+.Hero h1 {
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.Hero p {
+    margin: 0;
+}
+
+.Hero .right {
+    text-align: left;
+    width: 35%;
+    font-size: 18px;
+    padding-left: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
 /* Desktop vs mobile */
 @media only screen and (max-width: 900px) {
     .desktop {
