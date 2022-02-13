@@ -32,10 +32,6 @@ header {
     header { 
         height: 180px;
 
-        padding-left: 177px;
-        padding-top: 56px;
-        padding-bottom: 55px;
-
         align-items: center;
     }
 }
@@ -43,6 +39,12 @@ header {
 header > a, img.Logo {
     width: 114px;
     height: 120px;
+}
+
+@media only screen and (min-width: 900px) {
+    header > a {
+        margin-left: 50px;
+    }
 }
 
 /* Hamburger */
@@ -138,10 +140,19 @@ header > a, img.Logo {
     border: 1px solid white;
 }
 
+.Menu > a.Logo {
+    border: none;
+}
+
 @media only screen and (min-width: 900px) {
     .Menu a { 
         height: 50px;
         max-width: 252px;
+    }
+
+    .Menu > a.Logo {
+        order: -1;
+        height: 120px;
     }
 }
 
