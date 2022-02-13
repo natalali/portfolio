@@ -216,6 +216,13 @@ body > h2 {
     .Content h1 {
         text-align: left;
     }
+
+    .Content h2 {
+        text-align: left;
+        color: #437F8C;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
 }
 
 /* Index */
@@ -301,12 +308,6 @@ body > h2 {
         padding-top: 50px;
         padding-bottom: 100px;
     }
-
-    .Content.Portfolio h2 {
-        color: #437F8C;
-        font-weight: 500;
-        margin-bottom: 50px;
-    }
 }
 
 .Content.Portfolio div {
@@ -343,9 +344,24 @@ body > h2 {
 .Content.Project {
     padding: 0;
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: wrap;
 }
+
+.Content.Project .ProjectHeader {
+    width: 80%;
+    padding-top: 67px;
+}
+
+.Content.Project .ProjectHeader a {
+    font-size: 36px;
+    color: #437F8C;
+}
+
+.Content.Project .ProjectHeader h2 {
+    margin-top: 3px;
+    font-size: 48px;
+}
+
 
 @media only screen and (min-width: 900px) {
     .Content.Project .half {
@@ -360,9 +376,9 @@ body > h2 {
     height: 100%;
 }
 
-.Content.Project p, .Content.Project h2 {
+.Content.Project p, .Content.Project h3 {
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 90px;
 }
 
 /* Contact */
