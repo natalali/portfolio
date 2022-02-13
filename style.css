@@ -176,7 +176,6 @@ h1 {
 
 /* Pages other than about with title */
 body > h1 {
-    text-transform: uppercase;
     font-weight: normal;
     letter-spacing: 0.1em;
 }
