@@ -362,12 +362,26 @@ body > h2 {
     font-size: 48px;
 }
 
-
 @media only screen and (min-width: 900px) {
     .Content.Project .half {
         width: 50%;
-        flex: 1 1 auto;
-        margin: 0;
+    }
+
+    .Content.Project .half-right {
+        width: 50%;
+        box-sizing: border-box;
+
+        padding-left: 20px;
+        padding-right: 90px;
+    }
+
+    .Content.Project .half-left {
+        width: 50%;
+        box-sizing: border-box;
+
+        text-align: right;
+        padding-left: 90px;
+        padding-right: 20px;
     }
 }
 
@@ -376,10 +390,7 @@ body > h2 {
     height: 100%;
 }
 
-.Content.Project p, .Content.Project h3 {
-    padding-left: 20px;
-    padding-right: 90px;
-}
+
 
 /* Contact */
 
