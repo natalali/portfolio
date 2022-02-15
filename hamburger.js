@@ -9,5 +9,6 @@ document.querySelector("header").prepend(hbg);
 document.querySelector(".Hamburger").addEventListener("click",
     () => {
         document.querySelector(".Menu").classList.toggle("hidden");
+		document.querySelector(".Hamburger").classList.toggle("fixed");
     }
 );
