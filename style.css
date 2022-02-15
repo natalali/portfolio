@@ -387,6 +387,29 @@ body > h2 {
     }
 }
 
+.Content.Project .row {
+	display: flex;
+	width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	.Content.Project .row {
+		flex-wrap: wrap;
+	}
+	
+	.Content.Project .row img {
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.Content.Project .row img {
+		max-height: 100%;
+		min-width: 100%;
+		object-fit: contain;
+	}
+}
+
 .Content.Project img {
     width: 100%;
     height: 100%;
