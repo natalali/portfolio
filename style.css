@@ -182,14 +182,14 @@ header > a, img.Logo {
 h1 {
     font-size: 24px;
     text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
 }
 
 /* Pages other than about with title */
 body > h1 {
     font-weight: normal;
     letter-spacing: 0.1em;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 /* Hide the white headers on desktop */
 @media only screen and (min-width: 900px) {
