@@ -112,6 +112,7 @@ header > a, img.Logo {
     .Menu {
         width: 100vw;
         height: 100vh;
+        min-height: 700px;
         position: fixed;
         top: 0;
 
