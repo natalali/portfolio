@@ -123,7 +123,7 @@ header > a, img.Logo {
         gap: 20px;
 
 
-        transition: transform 1s;
+        transition: transform 0.7s;
     }
 
     .Menu.hidden {
