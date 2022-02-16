@@ -349,6 +349,7 @@ body > h2 {
 
 .Content.Portfolio a img {
     width: 100%;
+    display: block;
 }
 
 /* Specific portfolio project */
